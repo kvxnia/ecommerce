@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="comer-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+
+    <nav class="navegacion">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+
+        <ul class="link-nav">
+            <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecera">
+        <h1 class="titulo">TechPulse</h1>
+    </header>
+
+
+    <!--CUERPO DE PAGINA-->
+    <main class="contenedor">
+        <section class="seccion">
+            <article class="caja">
+                <img src="monitor1.jpg" alt="Imagen de un monitor" class="productos">
+                <h2>Monitores</h2>
+                <p>$xxxxx</p>
+                <button class="boton" onclick="agregarAlCarrito()">Comprar</button>
+            </article>
+            <!---->
+            <article class="caja">
+                <img src="mouse.jpeg" alt="Imagen de un mouse" class="productos">
+                <h2>Mouses</h2>
+                <p>$xxxxx</p>
+                <button class="boton" onclick="agregarAlCarrito()">Comprar</button>
+            </article>
+            <!---->
+            <article class="caja">
+                <img src="auris.jpg" alt="auricuales" class="productos">
+                <h2>Auriculares</h2>
+                <p>$xxxxx</p>
+                <button class="boton" onclick="agregarAlCarrito()">Comprar</button>
+            </article>
+            <!---->
+            <article class="caja">
+                <img src="RTX3070.png" alt="placa de video" class="productos">
+                <h2>Placas de Video RTX 3070</h2>
+                <p>$xxxxx</p>
+                <button class="boton" onclick="agregarAlCarrito()">Comprar</button>
+            </article>
+            <!---->
+            <article class="caja">
+                <img src="teclado.png" alt="Teclado" class="productos">
+                <h2>Teclados Gaming</h2>
+                <p>$xxxxx</p>
+                <button class="boton" onclick="agregarAlCarrito()">Comprar</button>
+            </article>
+        </section>
+    </main>
+
+
+
+
+
+
+    <!--PIE DE PAGINA-->
+    <footer class="pie-pag">
+        <p>Derechos de autor &copy; 2024 TechPulse</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+/**/
+
+
+body{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+}
+
+/*Animacion de titulo de X, Y*/
+.titulo {
+    font-size: 2.5em;
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+/*navegacion*/
+
+.navegacion{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    background-image: url('fondo-ca.jpg');
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.navegacion li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 3vh;
+}
+
+
+
+
+
+/*cabecera*/
+
+
+.cabecera h1, .contenedor h1{
+    text-shadow: 10px 12px 10px rgba(0, 0, 0, 0.628);
+    padding-left: 2%;
+
+
+    font-size: 3em; /* Tamaño del texto */
+    background-image: url('fondo-ca.jpg'); /* Ruta de la imagen */
+    background-clip: text; /* Aplica el clip de fondo al texto */
+    -webkit-background-clip: text; /* Para navegadores webkit */
+    color: transparent;
+    
+}
+
+
+
+
+
+
+/*contenedor*/
+.seccion{
+    padding: 5%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    
+    
+}
+
+.caja{
+    
+    text-align: center;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 5%;
+    margin-bottom: 20px;
+    box-shadow: 14px 15px 20px #0000008c;
+    opacity: 1;
+    transition: transform 0.3s ease ;
+    -webkit-transition: transform 0.3s ease ;
+    -moz-transition: transform 0.3s ease ;
+    -ms-transition: transform 0.3s ease ;
+    -o-transition: transform 0.3s ease ;
+    border-radius: 10% ;
+    -webkit-border-radius: 10% ;
+    -moz-border-radius: 10% ;
+    -ms-border-radius: 10% ;
+    -o-border-radius: 10% ;
+}
+
+
+
+    /*PRODUCTOS*/
+.productos{
+    width: 50%;
+    
+}
+
+
+
+.caja:hover{
+    background-color: rgb(244, 244, 244);
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    
+}
+
+.boton{
+    font-size: 2vh;
+    color: white;
+    background-color: #72bcd4;
+    margin: 2% ;
+    padding: 1%;
+    cursor: pointer;
+    transition: .3s ease all;
+    border: 0px ;
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+}
+
+.boton:hover{
+    background-color:  #f7f4f3;
+    color: black;
+}
+
+
+
+/*pie de pagina*/
+
+.pie-pag{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 2%;
+    
+}
+
+
+
+/**/
+
+/*---------------CONTACTO----------------*/
+
+
+
+
+.redes{
+    padding: 5%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.red-ani{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    background-color: #181818;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    box-shadow: 16px 14px 20px #0000008c;
+
+
+
+    transition: transform 0.3s ease ;
+    -webkit-transition: transform 0.3s ease ;
+    -moz-transition: transform 0.3s ease ;
+    -ms-transition: transform 0.3s ease ;
+    -o-transition: transform 0.3s ease ;
+    border-radius: 10% ;
+    -webkit-border-radius: 10% ;
+    -moz-border-radius: 10% ;
+    -ms-border-radius: 10% ;
+    -o-border-radius: 10% ;
+}
+
+
+.red-ani a{
+    outline: none;
+    text-decoration: none;
+    color: #bfbebe;
+    margin: 3px;
+    font-size: 2vh;
+    display: block;
+    
+}
+
+.red-ani a,p{
+    z-index: 1;
+    
+
+}
+
+
+
+
+.red-ani p{
+    color: #bfbebe;
+    font-size: 3vh;
+
+}
+
+
+.red-ani:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    
+}
+
+
+.red-ani::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    background-image: conic-gradient(red 20deg,transparent 120deg);
+    animation: rotar 2s linear infinite;
+    -webkit-animation: rotar 2s linear infinite;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotate(1turn);
+        -webkit-transform: rotate(1turn);
+        -moz-transform: rotate(1turn);
+        -ms-transform: rotate(1turn);
+        -o-transform: rotate(1turn);
+}
+}
+
+.red-ani::after{
+    content: "";
+    position: absolute;
+    height: 340px;
+    width: 290px;
+    background-color: #181818;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (600px <= width <=1199){  
+    /*Tablets*/
+    
+}
+
+@media screen and (width <= 600px){
+    
+/*-----------------------------PAGINA DE INDEX---------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+    
+    .link-nav{
+        display: none;
+        
+    }
+
+
+    .seccion{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+
+        
+    }
+    
+
+    .caja:hover{
+        
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+
+    .pie-pag{
+        position: relative;
+    }
+
+    .menu-abierto{
+        display: block;
+    }
+    
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+    .red-ani:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    
+    
+
+    
+    .navegacion {
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .fas {
+        padding: 4px;
+    }
+    
+    
+
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="comer-style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <main>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+        </nav>
+    
+        <header class="cabecera">
+            <h1 class="titulo">Bienvenido!!</h1>
+        </header>
+        <div class="caja-login">
+            <form class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <div class="formulario">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="formulario">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="submit" onclick="verifi()">Iniciar Sesión</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
