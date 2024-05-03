@@ -33,11 +33,9 @@ body{
 
 .navegacion{
     z-index: 1;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    margin: 10px;
-    background-image: url('fondo-ca.jpg');
+    display: flexbox;
+    
+    
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -52,7 +50,7 @@ body{
 
 .navegacion a{
     text-decoration: none;
-    color: rgb(255, 254, 254);
+    color: rgb(203, 18, 18);
     font-size: 3vh;
 }
 
@@ -75,6 +73,33 @@ body{
     color: transparent;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
