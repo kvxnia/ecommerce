@@ -4,51 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="elias.css">
+    <link rel="stylesheet" href="comer-style.css">
+    <link rel="stylesheet" href="ns.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     
 </head>
 <body>
-    <header class="contenedor">
+    <header class="cabecera">
         <h1 class="titulo">TechPulse</h1>
+        <nav class="navegacion">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="link-nav">
+                <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav class="navegacion">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-    
-        </ul>
-    </nav>
+    <div class="linea"></div>
 
     <main>
         <section class="acerca">
             <h2>Acerca de Nosotros</h2>
-            <p>En TechPulse, nos dedicamos a ofrecer soluciones de hardware de PC de alta calidad desde [año de fundación]. Nuestro compromiso es proporcionar productos innovadores y un servicio excepcional.</p>
-            
+            <p>En TechPulse, nos apasiona proporcionar soluciones de hardware de PC de primera calidad para satisfacer las necesidades de nuestros clientes. Desde nuestra fundación en [año de fundación], nos hemos comprometido a ofrecer productos innovadores y un servicio excepcional a cada paso del camino.</p>
+        </section>
+        
+        <section class="mision">
             <h2>Nuestra Misión</h2>
-            <p>Democratizamos el acceso a la tecnología de punta, ofreciendo productos de hardware de PC de alta calidad a precios accesibles para que todos puedan disfrutar de la informática moderna.</p>
-            
+            <p>Nuestra misión en TechPulse es democratizar el acceso a la tecnología de punta, proporcionando productos de hardware de PC de alta calidad a precios accesibles. Creemos que cada individuo merece experimentar el poder y la emoción de la informática moderna, y trabajamos incansablemente para hacerlo posible.</p>
+        </section>
+
+        <section class="mision">
             <h2>Compromiso con la Calidad</h2>
             <p>Ofrecemos solo productos de la más alta calidad, seleccionados cuidadosamente para cumplir con los estándares más exigentes de la industria.</p>
+        </section>
 
+        <section class="mision">
             <h2>Nuestro Equipo:</h2>
             <p>Nuestro equipo está formado por expertos en tecnología y servicio al cliente comprometidos con la excelencia y la satisfacción del cliente.</p>
+        </section>
 
+        <section class="mision">
             <h2>Servicio al Cliente:</h2>
             <p>Nuestra prioridad es superar las expectativas de nuestros clientes en cada interacción, brindando asesoramiento experto y soluciones rápidas.</p>
+        </section>
 
+        <section class="mision">
             <h2>Comunidad y Responsabilidad Social:</h2>
             <p>Operamos de manera responsable y sostenible, apoyando iniciativas comunitarias y proporcionando oportunidades de crecimiento a nuestra comunidad.</p>
+        </section>
 
+        <section class="mision">
             <h2>Únete a Nosotros:</h2>
             <p>Estamos emocionados de ser tu destino número uno para todas tus necesidades de hardware de PC. Únete a nosotros en nuestra misión de llevar la tecnología de vanguardia a cada hogar y negocio.</p>
-
-
         </section>
+        
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

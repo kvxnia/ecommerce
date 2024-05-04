@@ -6,20 +6,27 @@
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="comer-style.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
     <main>
-        <nav class="navegacion">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-            </ul>
-        </nav>
+        <header class="cabecera">
+            <h1 class="titulo">TechPulse</h1>
+            <nav class="navegacion">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="link-nav">
+                    <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="linea"></div>
     
         <header class="cabecera">
             <h1 class="titulo">Bienvenido!!</h1>
