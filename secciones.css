@@ -1,0 +1,8 @@
+.contenedor-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contenedor-flex h5 {
+    text-transform: uppercase;
+}
