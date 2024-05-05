@@ -3,66 +3,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouses</title>
-    <link rel="stylesheet" href="/secciones.css">
-    <link rel="stylesheet" href="/comer-style.csS">
+    <link rel="stylesheet" href="../secciones.css">
+    <link rel="stylesheet" href="../comer-style.csS">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
-    <nav class="navegacion">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="link-nav">
-            <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/nosotros.html">Nosotros</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-        </ul>
-    </nav>
-
     <header class="cabecera">
         <h1 class="titulo">TechPulse</h1>
+        <nav class="navegacion">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="link-nav">
+                <li id="carrito" onclick="window.location.href='../mantenimiento/manteni.html'; return false"><a href="../mantenimiento/manteni.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+                <li onclick="window.location.href='../index.html'; return false"><a href="../index.html">Home</a></li>
+                <li onclick="window.location.href='../nosotros.html'; return false"><a href="../nosotros.html">Nosotros</a></li>
+                <li onclick="window.location.href='../contacto.html'; return false"><a href="../contacto.html">Contacto</a></li>
+                <li onclick="window.location.href='../login.html'; return false"><a href="../login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="linea"></div>
+
+
+
+
         <section class="contenedor-flex">
             
             <article class="caja">
                 <img class="productos" src="imagenes/Logitech G203 lightsync.webp" alt="Mouse logitech g203 azul">
                 <h5>Logitech G203 azul</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
             <article class="caja">
                 <img class="productos" src="imagenes/Logitech G203 lightsync lila.webp" alt="Mouse Logitech G203 lila">
                 <h5>Logitech G203 lila</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
             <article class="caja">
                 <img class="productos" src="imagenes/Logitech G502 LIGHTSPEED WIRELESS.png" alt="Mouse Logitech G502 negro">
                 <h5>Logitech G502 negro</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
             <article class="caja">
                 <img class="productos" src="imagenes/Redragon M693 WIRELESS.png" alt="Redragon M693 WIRELESS">
                 <h5>Redragon M693 WIRELESS</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
             <article class="caja">
                 <img class="productos" src="imagenes/Hyperx Pulsefire haste 2.avif" alt="Hyperx Pulsefire haste 2">
                 <h5>Hyperx Pulsefire haste 2</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
             <article class="caja">
                 <img class="productos" src="imagenes/Redragon Invader M719.png" alt="Mouse Redragon Invader m719 negro">
                 <h5>Redragon Invader m719</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
         </section>
+        <script src="../link-General.js"></script>
+        <script src="../script.js"></script>
 </body>
 </html>

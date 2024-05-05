@@ -23,3 +23,5 @@ let cantidadCarrito = 0;
             console.log("Producto agregado al carrito. Cantidad actual: " + cantidadCarrito);
             document.getElementById("cantidad-carrito").textContent = cantidadCarrito;
         }
+
+

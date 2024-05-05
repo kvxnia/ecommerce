@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    
 
     <header class="cabecera">
         <h1 class="titulo">TechPulse</h1>
@@ -19,11 +18,11 @@
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="link-nav">
-                <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li id="carrito" onclick="window.location.href='./mantenimiento/manteni.html'"><a href="./mantenimiento/manteni.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+                <li onclick="window.location.href='index.html'; return false;"><a href="index.html">Home</a></li>
+                <li onclick="window.location.href='nosotros.html'; return false"><a href="nosotros.html">Nosotros</a></li>
+                <li onclick="window.location.href='contacto.html'; return false"><a href="contacto.html">Contacto</a></li>
+                <li onclick="window.location.href='login.html'; return false"><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -48,34 +47,42 @@
     <!--CUERPO DE PAGINA-->
     <main class="contenedor">
         <section class="seccion">
-            <article class="caja">
+            <article class="caja" onclick="window.location.href='./monitores/monitores.html'">
                 <img src="monitor.avif" alt="Imagen de un monitor" class="productos">
                 <h2>Monitores</h2>
-                <a class="boton" href="/monitores/monitores.html">Ver más</a>
+                <a class="boton" href="./monitores/monitores.html">Ver más</a>
             </article>
+
             <!---->
-            <article class="caja">
+
+            <article class="caja" onclick="window.location.href='./mouses/mouses.html'">
                 <img src="mouse.webp" alt="Imagen de un mouse" class="productos">
                 <h2>Mouses</h2>
-                <a class="boton" href="/mouses/mouses.html">Ver más</a>
+                <a class="boton" href="./mouses/mouses.html">Ver más</a>
             </article>
+
             <!---->
-            <article class="caja">
+
+            <article class="caja" onclick="window.location.href='./auriculares/auriculares.html'">
                 <img src="auris.webp" alt="auricuales" class="productos">
                 <h2>Auriculares</h2>
-                <a class="boton" href="/auriculares/auriculares.html">Ver más</a>
+                <a class="boton" href="./auriculares/auriculares.html">Ver más</a>
             </article>
+
             <!---->
-            <article class="caja">
+
+            <article class="caja" onclick="window.location.href='./placas/placas.html'">
                 <img src="RTX3070.png" alt="placa de video" class="productos">
                 <h2>Placas de Video</h2>
-                <a class="boton" href="/placas/placas.html">Ver más</a>
+                <a class="boton" href="./placas/placas.html">Ver más</a>
             </article>
+
             <!---->
-            <article class="caja">
-                <img src="teclado.png" alt="Teclado" class="productos">
+
+            <article class="caja" onclick="window.location.href='./teclados/teclados.html'">
+                <img src="teclado.png" alt="Teclado"class="productos">
                 <h2>Teclados Gaming</h2>
-                <a class="boton" href="/teclados/teclados.html">Ver más</a>
+                <a class="boton" href="./teclados/teclados.html">Ver más</a>
             </article>
         </section>
     </main>

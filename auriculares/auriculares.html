@@ -3,72 +3,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auriculares</title>
-    <link rel="stylesheet" href="/secciones.css">
-    <link rel="stylesheet" href="/comer-style.css">
-    <link rel="stylesheet" href="/index.html">
+    <link rel="stylesheet" href="../secciones.css">
+    <link rel="stylesheet" href="../comer-style.css">
+    <link rel="stylesheet" href="../index.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
-    <nav class="navegacion">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="link-nav">
-            <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/nosotros.html">Nosotros</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-        </ul>
-    </nav>
-
     <header class="cabecera">
         <h1 class="titulo">TechPulse</h1>
+        <nav class="navegacion">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="link-nav">
+                <li id="carrito" onclick="window.location.href='../mantenimiento/manteni.html'; return false"><a href="../mantenimiento/manteni.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+                <li onclick="window.location.href='../index.html'; return false"><a href="../index.html">Home</a></li>
+                <li onclick="window.location.href='../nosotros.html'; return false"><a href="../nosotros.html">Nosotros</a></li>
+                <li onclick="window.location.href='../contacto.html'; return false"><a href="../contacto.html">Contacto</a></li>
+                <li onclick="window.location.href='../login.html'; return false"><a href="../login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="linea"></div>
+
+
+
+
+
+
         <section class="contenedor-flex">
             
             <article class="caja">
                 <img class="productos" src="imagenes/auricular-gaming-hyperx-cloud-ii-wireless.png" alt="Auriculares Hyperx Cloud II wireless">
                 <h5>Hyperx Cloud II Wireless</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
 
             <article class="caja">
                 <img class="productos" src="imagenes/auricular corsair.png" alt="Auriculares Gamer Corsair VOID ELITE STEREO 50mm 3.5mm negro">
                 <h5>Corsair VOID ELITE STEREO</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
 
             <article class="caja">
                 <img class="productos" src="imagenes/auriculares jbl.png" alt="Auriculares JBL Quantum 300 negro">
                 <h5>JBL Quantum 300</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
 
             <article class="caja">
                 <img class="productos" src="imagenes/auriculares sony .png" alt="Auriculares Gamer Con Microfono Sony Inzone H3 MDR-G300 blanco">
                 <h5>Sony Inzone H3 MDR-G300</h5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
 
             <article class="caja">
                 <img class="productos" src="imagenes/auriculares logitech kda.png" alt="Auriculares Logitech lightspeed g733 K/DA blanco">
                 <H5>Logitech Lightspeed G733 K/DA</H5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
             
             <article class="caja">
                 <img class="productos" src="imagenes/auriculares logitech rosa.png" alt="Auriculares Logitech G435 rosa">
                 <H5>Logitech G435</H5>
-                <button class="boton">Agregar al carrito</button>
-                <button class="boton">Comprar</button>
+                <button class="boton" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                <button class="boton linkG">Comprar</button>
             </article>
         </section>
+        <script src="../link-General.js"></script>
+        <script src="../script.js"></script>
 </body>
 </html>

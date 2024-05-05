@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="comer-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
     <header class="cabecera">
-        <h1 class="titulo">Redes Sociales</h1>
+        <h1 class="titulo">TechPulse</h1>
         <nav class="navegacion">
             <div class="menu-icon" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="link-nav">
-                <li id="carrito"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li id="carrito" onclick="window.location.href='./mantenimiento/manteni.html'"><a href="./mantenimiento/manteni.html"><i class="fas fa-shopping-cart"></i> <span id="cantidad-carrito">0</span></a></li>
+                <li onclick="window.location.href='index.html'; return false;"><a href="index.html">Home</a></li>
+                <li onclick="window.location.href='nosotros.html'; return false"><a href="nosotros.html">Nosotros</a></li>
+                <li onclick="window.location.href='contacto.html'; return false"><a href="contacto.html">Contacto</a></li>
+                <li onclick="window.location.href='login.html'; return false"><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
             </ul>
         </nav>
     </header>
