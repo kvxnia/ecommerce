@@ -140,7 +140,9 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     
-    
+}
+.redes {
+    margin: 10px 10px;
 }
 
 .caja{
@@ -304,12 +306,7 @@ body{
 
 
 
-.redes{
-    padding: 5%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(5, 1fr);
-}
+
 
 
 .red-ani{
@@ -352,8 +349,10 @@ body{
     margin: 3px;
     font-size: 2vh;
     display: block;
+    flex-direction: row;
     
 }
+
 
 .red-ani a,p{
     z-index: 1;
