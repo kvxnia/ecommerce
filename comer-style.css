@@ -354,7 +354,7 @@ body{
     font-size: 2vh;
     display: block;
     flex-direction: row;
-    
+    margin: 5px;
 }
 
 
